@@ -5,6 +5,8 @@ import { UserContext } from '../../App';
 import { useHistory, useLocation } from 'react-router';
 import { Button } from 'react-bootstrap'
 import './Login.css'
+import Facebook from '../../image/Facebook-logo.png'
+import Google from '../../image/google.jpg'
 
 
 
@@ -219,12 +221,12 @@ function Login() {
       <div className="signIn_button ">
       
           <Button onClick={handleFacebookSignIn} variant="contained" >
-            <span className="facebook_btn"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="" /></span> Continue with facebook</Button>
+            <span className="facebook_btn"><img src={Facebook} alt="" /></span> Continue with facebook</Button>
           <br />
        
         
           <Button onClick={handleGoogleSignIn} variant="contained"  >
-            <span className="google_btn"><img src="https://logowik.com/content/uploads/images/t_985_google_g_icon.jpg" alt="" /></span> Continue with google</Button>
+            <span className="google_btn"><img src={Google} alt="" /></span> Continue with google</Button>
     
 
     
